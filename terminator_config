@@ -1,0 +1,20 @@
+[global_config]
+[keybindings]
+  go_down = <Primary>j
+  go_left = <Primary>h
+  go_right = <Primary>l
+  go_up = <Primary>k
+  next_tab = <Primary>n
+  prev_tab = <Primary>b
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
