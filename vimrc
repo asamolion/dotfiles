@@ -22,6 +22,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
 Plug 'valloric/youcompleteme'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 "Plug 'scrooloose/nerdcommenter'
 "Plug 'Xuyuanp/nerdtree-git-plugin'
 "Plug 'tmhedberg/SimpylFold'
