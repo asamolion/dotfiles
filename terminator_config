@@ -1,4 +1,5 @@
 [global_config]
+  suppress_multiple_term_dialog = True
 [keybindings]
   go_down = <Primary>j
   go_left = <Primary>h
@@ -19,4 +20,5 @@
   [[default]]
     cursor_color = "#aaaaaa"
     font = Monospace 13
+    scrollback_lines = 5000
     use_system_font = False
