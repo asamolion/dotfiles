@@ -1,22 +1,27 @@
 #!/bin/bash
 
+# Add software sources
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
 sudo apt update
 
-sudo apt-get install -y \
+# Install
+sudo apt install -y \
     apt-transport-https \
     ca-certificates \
     curl \
+    debhelper \
     diodon \
     dropbox \
     filezilla \
     jumpapp \
     kazam \
     mysql-client mysql-server mysql-workbench \
+    pandoc \
     php composer php-common php-mbstring php-xml php-zip \
     qbittorrent \
+    shunit2 \
     snapd \
     software-properties-common \
     sublime-text \
@@ -45,10 +50,28 @@ sudo apt-get install -y docker-ce
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-# TODO Setup MEGASync folders
-#mega-sync $HOME/.config/sublime-text-3/Packages/User /SublimeUser
-#mega-sync $HOME/Documents /Documents
-#mega-sync $HOME/Pictures /Pictures
+# Install MEGAcmd
+git clone https://github.com/meganz/MEGAcmd.git
+cd MEGAcmd
+git submodule update --init --recursive
+sh autogen.sh
+./configure
+make
+make install
+cd ..
+
+mega-sync $HOME/.config/sublime-text-3/Packages/User /SublimeUser
+mega-sync $HOME/Documents /Documents
+mega-sync $HOME/Pictures /Pictures
+
+# Install Jumpapp
+git clone https://github.com/mkropat/jumpapp.git
+cd jumpapp
+make deb
+sudo dpkg -i jumpapp*all.deb
+sudo apt-get install -f
+cd ..
+rm -rf jumpapp
 
 # Import Cinnamon desktop settings
 dconf load /org/cinnamon/ < ./cinnamon.conf
