@@ -41,3 +41,5 @@ sudo usermod -aG docker $USER
 #mega-sync $HOME/Documents /Documents
 #mega-sync $HOME/Pictures /Pictures
 
+# Import Cinnamon desktop settings
+dconf load /org/cinnamon/ < ./cinnamon.conf
