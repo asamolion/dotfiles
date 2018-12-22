@@ -3,8 +3,6 @@
 sudo apt-get install \
     terminator \
     vim vim-gtk3 \
-    gnome-tweak-tools \
-    nemo \
     curl \
     vagrant \
     virtualbox \
@@ -25,7 +23,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/$(get_latest_release "
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
+   bionic \
    stable"
 
 
