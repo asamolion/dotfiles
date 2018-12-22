@@ -1,20 +1,29 @@
 #!/bin/bash
 
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
 sudo apt update
 
 sudo apt-get install \
-    terminator \
-    sublime-text \
-    vim vim-gtk3 \
-    curl \
-    vagrant \
-    virtualbox \
     apt-transport-https \
     ca-certificates \
+    curl \
+    diodon \
+    dropbox \
+    filezilla \
+    kazam \
+    mysql \
+    mysql-workbench \
+    qbittorrent \
+    snapd \
     software-properties-common \
-    snapd
+    sublime-text \
+    terminator \
+    vagrant \
+    vim vim-gtk3 \
+    virtualbox \
+    vlc
 
 sudo snap install postman
 
@@ -28,8 +37,6 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/$(get_latest_release "
 
 #  Install docker
 sudo apt-get remove docker docker-engine docker.io
-
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 sudo apt-get install docker-ce
 
