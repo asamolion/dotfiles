@@ -5,16 +5,17 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 sudo apt update
 
-sudo apt-get install \
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
     diodon \
     dropbox \
     filezilla \
+    jumpapp \
     kazam \
-    mysql \
-    mysql-workbench \
+    mysql-client mysql-server mysql-workbench \
+    php composer php-common php-mbstring php-xml php-zip \
     qbittorrent \
     snapd \
     software-properties-common \
@@ -23,6 +24,7 @@ sudo apt-get install \
     vagrant \
     vim vim-gtk3 \
     virtualbox \
+    virtualenv virtualenvwrapper \
     vlc
 
 sudo snap install postman
@@ -38,7 +40,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/$(get_latest_release "
 #  Install docker
 sudo apt-get remove docker docker-engine docker.io
 
-sudo apt-get install docker-ce
+sudo apt-get install -y docker-ce
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
