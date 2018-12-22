@@ -48,7 +48,7 @@ set numberwidth=4
 set shiftwidth=4
 set shiftround
 set matchtime=2
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 set tabstop=4
 set expandtab
 set cursorline

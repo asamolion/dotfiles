@@ -1,5 +1,7 @@
 [global_config]
+  enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   suppress_multiple_term_dialog = True
+  window_state = maximise
 [keybindings]
   go_down = <Primary>j
   go_left = <Primary>h
@@ -18,7 +20,25 @@
 [plugins]
 [profiles]
   [[default]]
+    background_color = "#383838"
     cursor_color = "#aaaaaa"
     font = Monospace 13
+    foreground_color = "#ffffff"
+    scrollback_lines = 5000
+    use_system_font = False
+  [[Afterglow]]
+    background_color = "#212121"
+    cursor_color = "#d0d0d0"
+    font = Monospace 13
+    foreground_color = "#d0d0d0"
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+    scrollback_lines = 5000
+    use_system_font = False
+  [[One dark]]
+    background_color = "#1e2127"
+    cursor_color = "#676c76"
+    font = Monospace 13
+    foreground_color = "#5c6370"
+    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
     scrollback_lines = 5000
     use_system_font = False
