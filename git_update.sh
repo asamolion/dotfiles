@@ -5,4 +5,4 @@ DATE="$(date)"
 echo $DATE
 git commit -m "$DATE"
 
-# git push
+git push
