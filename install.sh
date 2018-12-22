@@ -1,5 +1,11 @@
 #!/bin/bash
 
+sudo add-apt-repository "deb https://mega.nz/linux/MEGAsync/xUbuntu_18.04/ ./"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
+
+sudo apt update
+
 sudo apt-get install \
     terminator \
     sublime-text \
