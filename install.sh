@@ -70,6 +70,9 @@ sudo dpkg -i jumpapp*all.deb
 
 cd $HOME/dotfiles/
 
+# Clear downloaded debs
+rm $HOME/Downloads/*.deb
+
 # Fix broken packages just in case
 sudo apt-get install -f
 
