@@ -6,6 +6,9 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 sudo apt update
 
+# Download debs
+wget -P $HOME/Downloads https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
+
 # Install
 sudo apt install -y \
     apt-transport-https \
@@ -31,6 +34,8 @@ sudo apt install -y \
     virtualbox \
     virtualenv virtualenvwrapper
 
+sudo dpkg -i $HOME/Downloads/*.deb
+
 sudo snap install postman
 sudo snap install vscode --classic
 
@@ -50,16 +55,7 @@ sudo apt-get install -y docker-ce
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-# Install MEGAcmd
-git clone https://github.com/meganz/MEGAcmd.git
-cd MEGAcmd
-git submodule update --init --recursive
-sh autogen.sh
-./configure
-sudo make
-sudo make install
-cd ..
-
+# Setup MEGA syncs
 mega-sync $HOME/.config/sublime-text-3/Packages/User /SublimeUser
 mega-sync $HOME/Documents /Documents
 mega-sync $HOME/Pictures /Pictures
