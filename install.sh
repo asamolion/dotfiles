@@ -5,12 +5,10 @@ cp "./img/minimal deadpool.jpg" $HOME/Pictures/
 
 # Download debs
 wget -P $HOME/Downloads https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
+wget -P $HOME/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 # Install debs
-sudo dpkg -i $HOME/Downloads/*.deb
-
-# Fix broken install
-sudo apt-get install -y -f
+sudo apt install $HOME/Downloads/*.deb
 
 # Add software sources
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -43,8 +41,8 @@ sudo apt install -y \
     virtualbox \
     virtualenv virtualenvwrapper
 
-sudo snap install postman
-sudo snap install vscode --classic
+#sudo snap install postman
+#sudo snap install vscode --classic
 
 # Install nvm
 get_latest_release() {
@@ -55,9 +53,9 @@ get_latest_release() {
 curl -o- https://raw.githubusercontent.com/creationix/nvm/$(get_latest_release "creationix/nvm")/install.sh | bash
 
 #  Install docker
-sudo apt-get remove docker docker-engine docker.io
+sudo apt remove docker docker-engine docker.io
 
-sudo apt-get install -y docker-ce
+sudo apt install -y docker-ce
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
@@ -66,7 +64,7 @@ sudo usermod -aG docker $USER
 git clone https://github.com/mkropat/jumpapp.git
 cd jumpapp
 make deb
-sudo dpkg -i jumpapp*all.deb
+sudo apt install ./jumpapp*all.deb
 
 cd $HOME/dotfiles/
 
