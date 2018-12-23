@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy files
-cp "./img/minimal deadpool.jpg" $HOME/Pictures/
+cp ./img/* $HOME/Pictures/
 
 # Download debs
 wget -P $HOME/Downloads https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
