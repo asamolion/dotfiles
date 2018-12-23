@@ -8,7 +8,7 @@ wget -P $HOME/Downloads https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megas
 wget -P $HOME/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 # Install debs
-sudo apt install $HOME/Downloads/*.deb
+sudo apt install -y $HOME/Downloads/*.deb
 
 # Add software sources
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -64,7 +64,7 @@ sudo usermod -aG docker $USER
 git clone https://github.com/mkropat/jumpapp.git
 cd jumpapp
 make deb
-sudo apt install ./jumpapp*all.deb
+sudo apt install -y ./jumpapp*all.deb
 
 cd $HOME/dotfiles/
 
