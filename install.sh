@@ -1,15 +1,23 @@
 #!/bin/bash
 
+# Copy files
+cp "./img/minimal deadpool.jpg" $HOME/Pictures/
+
+# Download debs
+wget -P $HOME/Downloads https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
+
+# Install debs
+sudo dpkg -i $HOME/Downloads/*.deb
+
+# Fix broken install
+sudo apt-get install -y -f
+
 # Add software sources
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
 sudo apt update
 
-# Download debs
-wget -P $HOME/Downloads https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
-
-# Install
 sudo apt install -y \
     apt-transport-https \
     build-essential \
@@ -20,6 +28,7 @@ sudo apt install -y \
     dropbox \
     filezilla \
     kazam \
+    megacmd \
     mysql-client mysql-server mysql-workbench \
     pandoc \
     php composer php-common php-mbstring php-xml php-zip \
@@ -33,8 +42,6 @@ sudo apt install -y \
     vim vim-gtk3 \
     virtualbox \
     virtualenv virtualenvwrapper
-
-sudo dpkg -i $HOME/Downloads/*.deb
 
 sudo snap install postman
 sudo snap install vscode --classic
@@ -55,19 +62,19 @@ sudo apt-get install -y docker-ce
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-# Setup MEGA syncs
-mega-sync $HOME/.config/sublime-text-3/Packages/User /SublimeUser
-mega-sync $HOME/Documents /Documents
-mega-sync $HOME/Pictures /Pictures
-
 # Install Jumpapp
 git clone https://github.com/mkropat/jumpapp.git
 cd jumpapp
 make deb
 sudo dpkg -i jumpapp*all.deb
+
+cd $HOME/dotfiles/
+
+# Fix broken packages just in case
 sudo apt-get install -f
-cd ..
-rm -rf jumpapp
+
+# Clean all generated files
+git clean -f
 
 # Import Cinnamon desktop settings
 dconf load /org/cinnamon/ < ./cinnamon.conf
