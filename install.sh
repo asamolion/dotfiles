@@ -71,6 +71,8 @@ cd $HOME/dotfiles/
 # Clear downloaded debs
 rm $HOME/Downloads/*.deb
 
+sudo apt upgrade
+
 # Fix broken packages just in case
 sudo apt-get install -f
 
