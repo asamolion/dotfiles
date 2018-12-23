@@ -41,8 +41,8 @@ sudo apt install -y \
     virtualbox \
     virtualenv virtualenvwrapper
 
-#sudo snap install postman
-#sudo snap install vscode --classic
+sudo snap install postman
+sudo snap install vscode --classic
 
 # Install nvm
 get_latest_release() {
