@@ -16,7 +16,6 @@ sudo apt install -y \
     diodon \
     dropbox \
     filezilla \
-    jumpapp \
     kazam \
     mysql-client mysql-server mysql-workbench \
     pandoc \
@@ -30,10 +29,10 @@ sudo apt install -y \
     vagrant \
     vim vim-gtk3 \
     virtualbox \
-    virtualenv virtualenvwrapper \
-    vlc
+    virtualenv virtualenvwrapper
 
 sudo snap install postman
+sudo snap install vscode --classic
 
 # Install nvm
 get_latest_release() {
