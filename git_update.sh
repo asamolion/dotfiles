@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Export cinnamon settings
 dconf dump /org/cinnamon/ > cinnamon.conf
 
 git add .

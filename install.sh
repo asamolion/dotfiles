@@ -9,6 +9,7 @@ sudo apt update
 # Install
 sudo apt install -y \
     apt-transport-https \
+    build-essential \
     ca-certificates \
     curl \
     debhelper \
@@ -56,8 +57,8 @@ cd MEGAcmd
 git submodule update --init --recursive
 sh autogen.sh
 ./configure
-make
-make install
+sudo make
+sudo make install
 cd ..
 
 mega-sync $HOME/.config/sublime-text-3/Packages/User /SublimeUser
