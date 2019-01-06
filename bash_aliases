@@ -13,16 +13,19 @@ alias eucsd="cd $HOME/arbisoft/ucsd/edx/edx-platform && workon ucsd"
 alias evucsd="cd $HOME/arbisoft/ucsd/events"
 alias sucsd="subl $HOME/ucsd.sublime-project"
 
+alias srfx="subl $HOME/rfx.sublime-project"
+alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
+
 alias gxi="cd $HOME/gxi && cargo run &"
 
 # Git aliaes
-alias gitch="git checkout"
-alias gitcl="git clone"
-alias gitf="git fetch"
+alias checkout="git checkout"
+alias clone="git clone"
+alias fetch="git fetch"
 alias pull="git pull"
 alias push="git push"
-alias gitst="git status"
-alias gitb="git branch"
+alias stat="git status"
+alias branch="git branch"
 
 alias cod4="docker start fervent_kowalevski"
 
