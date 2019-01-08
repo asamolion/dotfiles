@@ -39,10 +39,17 @@ sudo apt install -y \
     vagrant \
     vim vim-gtk3 \
     virtualbox \
-    virtualenv virtualenvwrapper
+    virtualenv virtualenvwrapper \
+    zsh
 
 sudo snap install postman
 sudo snap install vscode --classic
+
+# Set zsh as default shell
+chsh -s $(which zsh)
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install nvm
 get_latest_release() {
