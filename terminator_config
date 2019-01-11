@@ -7,8 +7,8 @@
   go_left = <Primary>h
   go_right = <Primary>l
   go_up = <Primary>k
-  next_tab = <Primary>n
-  prev_tab = <Primary>b
+  next_tab = <Primary>Page_Down
+  prev_tab = <Primary>Page_Up
 [layouts]
   [[default]]
     [[[child1]]]
