@@ -16,7 +16,6 @@ alias sucsd="subl $HOME/ucsd.sublime-project"
 alias srfx="subl $HOME/rfx.sublime-project"
 alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
 
-alias gxi="cd $HOME/gxi && cargo run &"
 
 # Git aliaes
 alias checkout="git checkout"
