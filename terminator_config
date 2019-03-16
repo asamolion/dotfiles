@@ -12,7 +12,10 @@
 [layouts]
   [[default]]
     [[[child1]]]
+      command = ""
+      directory = ""
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""

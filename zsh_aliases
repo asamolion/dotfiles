@@ -2,6 +2,7 @@ alias ..="cd .."
 alias -- -="cd -"
 alias lsa="ls -al"
 alias cat="bat"
+alias s.="subl ."
 
 alias desk="cd ~/Desktop"
 alias down="cd ~/Downloads"
@@ -9,14 +10,22 @@ alias arbi="cd ~/arbisoft"
 alias work="cd ~/workspace"
 alias test="cd ~/workspace/test"
 alias philu="subl $HOME/philu.sublime-project"
-alias ducsd="cd $HOME/arbisoft/ucsd/edx/devstack && workon ucsd"
-alias eucsd="cd $HOME/arbisoft/ucsd/edx/edx-platform && workon ucsd"
-alias evucsd="cd $HOME/arbisoft/ucsd/events"
+alias dedX="cd $HOME/arbisoft/edx/devstack && workon edx"
+alias eucsd="cd $HOME/arbisoft/edx/edx-platform && workon edx"
 alias sucsd="subl $HOME/ucsd.sublime-project"
 
+
+# project aliases
 alias srfx="subl $HOME/rfx.sublime-project"
 alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
 alias sinquire="subl $HOME/inquiretalk.sublime-project"
+
+alias inquiref="cd $HOME/workspace/fiverr/deliverance74/inquiretalk/inquiretalk-frontend && npm run serve"
+alias inquireb="cd $HOME/workspace/fiverr/deliverance74/inquiretalk/inquiretalk-backend && php artisan serve"
+alias inquirec="cd $HOME/workspace/fiverr/deliverance74/inquiretalk/inquiretalk-frontend && npx cypress open"
+
+alias sedly="subl $HOME/edly.sublime-project"
+
 
 # Git aliaes
 alias checkout="git checkout"
@@ -29,4 +38,12 @@ alias branch="git branch"
 
 alias cod4="docker start fervent_kowalevski"
 
-alias pwd="pwd | xclip -selection c"
+alias pwd="pwd | xclip -selection c && pwd"
+alias rmpyc="find . -name "*.pyc" -exec rm -f {} \;"
+
+alias hostedit="sudoedit /etc/hosts"
+alias xamppstart="sudo /opt/lampp/lampp start"
+alias xamppstop="sudo /opt/lampp/lampp stop"
+
+alias stopdocker="docker stop $(docker ps -a -q)"
+
