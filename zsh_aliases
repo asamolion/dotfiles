@@ -1,28 +1,18 @@
 alias ..="cd .."
 alias -- -="cd -"
-alias lsa="ls -al"
 alias cat="bat"
 alias s.="subl ."
 
-alias desk="cd ~/Desktop"
-alias down="cd ~/Downloads"
-alias arbi="cd ~/arbisoft"
-alias work="cd ~/workspace"
-alias test="cd ~/workspace/test"
 alias philu="subl $HOME/philu.sublime-project"
-alias dedX="cd $HOME/arbisoft/edx/devstack && workon edx"
+alias dedX="export OPENEDX_RELEASE=hawthorn.master && cd $HOME/arbisoft/edx/devstack && workon edx"
 alias eucsd="cd $HOME/arbisoft/edx/edx-platform && workon edx"
 alias sucsd="subl $HOME/ucsd.sublime-project"
 
+alias edlystack="unset OPENEDX_RELEASE && cd $HOME/arbisoft/edly/edX/devstack && workon edx"
 
 # project aliases
-alias srfx="subl $HOME/rfx.sublime-project"
 alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
-alias sinquire="subl $HOME/inquiretalk.sublime-project"
-
-alias inquiref="cd $HOME/workspace/fiverr/deliverance74/inquiretalk/inquiretalk-frontend && npm run serve"
-alias inquireb="cd $HOME/workspace/fiverr/deliverance74/inquiretalk/inquiretalk-backend && php artisan serve"
-alias inquirec="cd $HOME/workspace/fiverr/deliverance74/inquiretalk/inquiretalk-frontend && npx cypress open"
+alias srfx="subl $HOME/rfx.sublime-project"
 
 alias sedly="subl $HOME/edly.sublime-project"
 
@@ -46,4 +36,5 @@ alias xamppstart="sudo /opt/lampp/lampp start"
 alias xamppstop="sudo /opt/lampp/lampp stop"
 
 alias stopdocker="docker stop $(docker ps -a -q)"
+
 
