@@ -29,7 +29,6 @@ alias branch="git branch"
 alias cod4="docker start fervent_kowalevski"
 
 alias pwd="pwd | xclip -selection c && pwd"
-alias rmpyc="find . -name "*.pyc" -exec rm -f {} \;"
 
 alias hostedit="sudoedit /etc/hosts"
 alias xamppstart="sudo /opt/lampp/lampp start"
