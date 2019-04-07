@@ -87,4 +87,4 @@ sudo apt-get install -f
 git clean -f
 
 # Import Cinnamon desktop settings
-dconf load /org/cinnamon/ < ./cinnamon.conf
+#dconf load /org/cinnamon/ < ./cinnamon.conf
