@@ -4,8 +4,7 @@ alias cat="bat"
 alias s.="subl ."
 
 alias philu="subl $HOME/philu.sublime-project"
-alias dedX="export OPENEDX_RELEASE=hawthorn.master && cd $HOME/arbisoft/edx/devstack && workon edx"
-alias eucsd="cd $HOME/arbisoft/edx/edx-platform && workon edx"
+alias ducsd="export OPENEDX_RELEASE=hawthorn.master && workon devstack && cd $HOME/arbisoft/ucsd/edX/devstack"
 alias sucsd="subl $HOME/ucsd.sublime-project"
 
 alias edlystack="unset OPENEDX_RELEASE && cd $HOME/arbisoft/edly/edX/devstack && workon edx"
