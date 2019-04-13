@@ -7,6 +7,8 @@
   go_left = <Primary>h
   go_right = <Primary>l
   go_up = <Primary>k
+  group_all = None
+  group_all_toggle = <Super>g
   next_tab = <Primary>Page_Down
   prev_tab = <Primary>Page_Up
 [layouts]

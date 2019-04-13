@@ -1,0 +1,5 @@
+" Type :h neovintageousrc for help.
+
+
+nnoremap j gj
+nnoremap k gk
