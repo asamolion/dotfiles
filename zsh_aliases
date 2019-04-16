@@ -5,9 +5,10 @@ alias s.="subl ."
 
 alias philu="subl $HOME/philu.sublime-project"
 alias ducsd="export OPENEDX_RELEASE=hawthorn.master && workon devstack && cd $HOME/arbisoft/ucsd/edX/devstack"
-alias sucsd="subl $HOME/ucsd.sublime-project"
+alias sucsd="workon devstack && subl $HOME/ucsd.sublime-project"
 
-alias edlystack="unset OPENEDX_RELEASE && cd $HOME/arbisoft/edly/edX/devstack && workon edx"
+alias dedly="unset OPENEDX_RELEASE && cd $HOME/arbisoft/edly/edX/devstack && workon edx"
+alias sedly="unset OPENEDX_RELEASE && cd $HOME/arbisoft/edly/edX/devstack && workon edx"
 
 # project aliases
 alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
@@ -16,16 +17,6 @@ alias srfx="subl $HOME/rfx.sublime-project"
 alias sedly="subl $HOME/edly.sublime-project"
 
 
-# Git aliaes
-alias checkout="git checkout"
-alias clone="git clone"
-alias fetch="git fetch"
-alias pull="git pull"
-alias push="git push"
-alias stat="git status"
-alias branch="git branch"
-
-alias cod4="docker start fervent_kowalevski"
 
 alias pwd="pwd | xclip -selection c && pwd"
 
@@ -34,5 +25,7 @@ alias xamppstart="sudo /opt/lampp/lampp start"
 alias xamppstop="sudo /opt/lampp/lampp stop"
 
 alias stopdocker="docker stop $(docker ps -a -q)"
+
+alias mkvirtualenv3='mkvirtualenv --python=`which python3`'
 
 
