@@ -7,8 +7,8 @@ alias philu="subl $HOME/philu.sublime-project"
 alias ducsd="export OPENEDX_RELEASE=hawthorn.master && workon devstack && cd $HOME/arbisoft/ucsd/edX/devstack"
 alias sucsd="workon devstack && subl $HOME/ucsd.sublime-project"
 
-alias dedly="unset OPENEDX_RELEASE && cd $HOME/arbisoft/edly/edX/devstack && workon edx"
-alias sedly="unset OPENEDX_RELEASE && cd $HOME/arbisoft/edly/edX/devstack && workon edx"
+alias dedly="unset OPENEDX_RELEASE && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
+alias sedly="unset OPENEDX_RELEASE && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
 
 # project aliases
 alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
