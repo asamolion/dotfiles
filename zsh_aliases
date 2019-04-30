@@ -1,6 +1,5 @@
 alias ..="cd .."
 alias -- -="cd -"
-alias cat="bat"
 alias s.="subl ."
 
 alias philu="subl $HOME/philu.sublime-project"

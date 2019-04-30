@@ -3,6 +3,7 @@
   suppress_multiple_term_dialog = True
   window_state = maximise
 [keybindings]
+  copy = <Primary>c
   go_down = <Primary>j
   go_left = <Primary>h
   go_right = <Primary>l
@@ -10,6 +11,7 @@
   group_all = None
   group_all_toggle = <Super>g
   next_tab = <Primary>Page_Down
+  paste = <Primary>v
   prev_tab = <Primary>Page_Up
 [layouts]
   [[default]]
