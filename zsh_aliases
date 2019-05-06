@@ -6,8 +6,8 @@ alias philu="subl $HOME/philu.sublime-project"
 alias ducsd="export OPENEDX_RELEASE=hawthorn.master && workon devstack && cd $HOME/arbisoft/ucsd/edX/devstack"
 alias sucsd="workon devstack && subl $HOME/ucsd.sublime-project"
 
-alias dedly="unset OPENEDX_RELEASE && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
-alias sedly="unset OPENEDX_RELEASE && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
+alias dedly="export OPENEDX_RELEASE=ironwood.master && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
+alias sedly="export OPENEDX_RELEASE=ironwood.master && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
 
 # project aliases
 alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
@@ -17,6 +17,7 @@ alias sedly="subl $HOME/edly.sublime-project"
 
 
 
+alias rmpyc="find . -name '*.pyc' -exec rm -f {} \;"
 alias pwd="pwd | xclip -selection c && pwd"
 
 alias hostedit="sudoedit /etc/hosts"

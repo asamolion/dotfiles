@@ -3,5 +3,3 @@
 
 nnoremap j gj
 nnoremap k gk
-nnoremap 0 0w
-nnoremap V 0wv$h
