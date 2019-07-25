@@ -26,7 +26,6 @@ alias hostedit="sudoedit /etc/hosts"
 alias xamppstart="sudo /opt/lampp/lampp start"
 alias xamppstop="sudo /opt/lampp/lampp stop"
 
-alias stopdocker="docker stop $(docker ps -a -q)"
 
 alias mkvirtualenv3='mkvirtualenv --python=`which python3`'
 
