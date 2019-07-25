@@ -3,11 +3,13 @@ alias -- -="cd -"
 alias s.="subl ."
 
 alias philu="subl $HOME/philu.sublime-project"
-alias ducsd="export OPENEDX_RELEASE=hawthorn.master && workon devstack && cd $HOME/arbisoft/ucsd/edX/devstack"
+alias ducsd="export OPENEDX_RELEASE=ironwood.master && workon devstack && cd $HOME/arbisoft/ucsd/edX/devstack"
 alias sucsd="workon devstack && subl $HOME/ucsd.sublime-project"
 
 alias dedly="export OPENEDX_RELEASE=ironwood.master && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
 alias sedly="export OPENEDX_RELEASE=ironwood.master && workon devstack && cd $HOME/arbisoft/edly/edX/devstack"
+
+alias nodedx="export OPENEDX_RELEASE=ironwood.master && export NODEBB_RELEASE=v1.12.x && export EDX_PLATFORM_BRANCH=openedx_edly_discussion && workon devstack && cd $HOME/arbisoft/edly/nodebb-devstack/openedx-nodebb-devstack"
 
 # project aliases
 alias crfx="cd $HOME/workspace/fiverr/saloal/rfx"
@@ -17,7 +19,7 @@ alias sedly="subl $HOME/edly.sublime-project"
 
 
 
-alias rmpyc="find . -name '*.pyc' -exec rm -f {} \;"
+alias rmpyc="find . | grep -E \"(__pycache__|\.pyc|\.pyo$)\" | sudo xargs rm -rf"
 alias pwd="pwd | xclip -selection c && pwd"
 
 alias hostedit="sudoedit /etc/hosts"
@@ -27,5 +29,18 @@ alias xamppstop="sudo /opt/lampp/lampp stop"
 alias stopdocker="docker stop $(docker ps -a -q)"
 
 alias mkvirtualenv3='mkvirtualenv --python=`which python3`'
+
+
+# Mattermost
+
+alias mattermost="cd $(go env GOPATH)/src/github.com/mattermost"
+alias mmserver="cd $(go env GOPATH)/src/github.com/mattermost/mattermost-server"
+alias mmweb="cd $(go env GOPATH)/src/github.com/mattermost/mattermost-web"
+
+# UK Car Glass
+alias sukcarglass="subl $HOME/ukcarglass.sublime-project"
+
+# Alumni.me
+alias salumni="subl $HOME/alumni.sublime-project"
 
 
