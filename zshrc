@@ -68,7 +68,6 @@ plugins=(
   extract
   git
   nvm
-  virtualenvwrapper
   wd
 )
 

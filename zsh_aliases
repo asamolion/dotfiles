@@ -22,20 +22,6 @@ alias sedly="subl $HOME/edly.sublime-project"
 alias rmpyc="find . | grep -E \"(__pycache__|\.pyc|\.pyo$)\" | sudo xargs rm -rf"
 alias pwd="pwd | xclip -selection c && pwd"
 
-alias hostedit="sudoedit /etc/hosts"
-alias xamppstart="sudo /opt/lampp/lampp start"
-alias xamppstop="sudo /opt/lampp/lampp stop"
-
-
-alias mkvirtualenv3='mkvirtualenv --python=`which python3`'
-
-
-# Mattermost
-
-alias mattermost="cd $(go env GOPATH)/src/github.com/mattermost"
-alias mmserver="cd $(go env GOPATH)/src/github.com/mattermost/mattermost-server"
-alias mmweb="cd $(go env GOPATH)/src/github.com/mattermost/mattermost-web"
-
 # UK Car Glass
 alias sukcarglass="subl $HOME/ukcarglass.sublime-project"
 
