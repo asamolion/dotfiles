@@ -28,4 +28,6 @@ alias sukcarglass="subl $HOME/ukcarglass.sublime-project"
 # Alumni.me
 alias salumni="subl $HOME/alumni.sublime-project"
 
+alias sjumpcut="subl $HOME/jumpcut.sublime-project"
+
 
