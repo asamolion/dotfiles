@@ -30,4 +30,11 @@ alias salumni="subl $HOME/alumni.sublime-project"
 
 alias sjumpcut="subl $HOME/jumpcut.sublime-project"
 
+alias statmysql="sudo systemctl status mysqld.service"
+alias stopmysql="sudo systemctl stop mysqld.service"
+alias startmysql="sudo systemctl start mysqld.service"
+
+alias statpostgres="sudo systemctl status postgresql.service"
+alias startpostgres="sudo systemctl start postgresql.service"
+alias stoppostgres="sudo systemctl stop postgresql.service"
 
