@@ -16,3 +16,4 @@ sudo ln -sf $dotfiles_dir/terminator_config ~/.config/terminator/config
 sudo ln -sf $dotfiles_dir/neovintageousrc ~/.config/sublime-text-3/Packages/User/.neovintageousrc
 
 
+git config --global core.editor "vim"
