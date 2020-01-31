@@ -29,6 +29,7 @@ alias sukcarglass="subl $HOME/ukcarglass.sublime-project"
 alias salumni="subl $HOME/alumni.sublime-project"
 
 alias sjumpcut="subl $HOME/jumpcut.sublime-project"
+alias sjcpro="subl $HOME/jcpro.sublime-project"
 
 alias statmysql="sudo systemctl status mysql.service"
 alias stopmysql="sudo systemctl stop mysql.service"
