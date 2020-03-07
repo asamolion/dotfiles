@@ -39,3 +39,5 @@ alias statpostgres="sudo systemctl status postgresql.service"
 alias startpostgres="sudo systemctl start postgresql.service"
 alias stoppostgres="sudo systemctl stop postgresql.service"
 
+alias amend="git add . && git commit --amend -m 'wip' && gp -f"
+
