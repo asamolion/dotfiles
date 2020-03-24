@@ -41,3 +41,4 @@ alias stoppostgres="sudo systemctl stop postgresql.service"
 
 alias amend="git add . && git commit --amend -m 'wip' && gp -f"
 
+alias slhub="subl $HOME/lhuploader.sublime-project"
