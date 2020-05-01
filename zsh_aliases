@@ -1,6 +1,9 @@
 alias ..="cd .."
 alias -- -="cd -"
 alias s.="subl ."
+alias open="xdg-open"
+alias ssho="ssh -o IdentitiesOnly=yes"
+
 
 alias philu="subl $HOME/philu.sublime-project"
 alias ducsd="export OPENEDX_RELEASE=ironwood.master && workon devstack && cd $HOME/arbisoft/ucsd/edX/devstack"
@@ -42,3 +45,6 @@ alias stoppostgres="sudo systemctl stop postgresql.service"
 alias amend="git add . && git commit --amend -m 'wip' && gp -f"
 
 alias slhub="subl $HOME/lhuploader.sublime-project"
+
+alias oni2="$HOME/tools/Onivim2-x86_64.AppImage"
+

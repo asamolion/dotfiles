@@ -33,6 +33,7 @@
     cursor_color = "#aaaaaa"
     font = Monospace 13
     foreground_color = "#ffffff"
+    scrollback_infinite = True
     scrollback_lines = 5000
     use_system_font = False
   [[Afterglow]]

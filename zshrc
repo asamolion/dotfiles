@@ -114,8 +114,10 @@ eval $(thefuck --alias fix)
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH="$PATH:$ANDROID_HOME/build-tools/29.0.3"
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/snap/bin
+export PATH=$PATH:/opt/mssql-tools/bin
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/tools/android-studio/bin:$PATH"
 
