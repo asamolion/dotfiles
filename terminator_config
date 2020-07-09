@@ -31,7 +31,7 @@
   [[default]]
     background_color = "#383838"
     cursor_color = "#aaaaaa"
-    font = Monospace 13
+    font = Monospace 15
     foreground_color = "#ffffff"
     scrollback_infinite = True
     scrollback_lines = 5000

@@ -113,6 +113,8 @@ eval $(thefuck --alias fix)
 
 
 export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export JAVA_HOME="/usr/java/jdk1.8.0_251"
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH="$PATH:$ANDROID_HOME/build-tools/29.0.3"
 export PATH=$PATH:$ANDROID_HOME/platform-tools
@@ -120,4 +122,7 @@ export PATH=$PATH:/snap/bin
 export PATH=$PATH:/opt/mssql-tools/bin
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/tools/android-studio/bin:$PATH"
+export PATH="$PATH:/usr/java/jdk1.8.0_251/bin"
+
+
 
