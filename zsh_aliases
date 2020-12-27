@@ -33,6 +33,8 @@ alias salumni="subl $HOME/alumni.sublime-project"
 
 alias sjumpcut="subl $HOME/jumpcut.sublime-project"
 alias sjcpro="subl $HOME/jcpro.sublime-project"
+alias silminate="subl $HOME/edxilminate.sublime-project"
+alias steams="subl $HOME/teams.sublime-project"
 
 alias statmysql="sudo systemctl status mysql.service"
 alias stopmysql="sudo systemctl stop mysql.service"
@@ -45,5 +47,7 @@ alias stoppostgres="sudo systemctl stop postgresql.service"
 alias amend="git add . && git commit --amend -m 'wip' && gp -f"
 
 alias slhub="subl $HOME/lhuploader.sublime-project"
+
+alias tailnginxerror="sudo tail -f /var/log/nginx/error.log"
 
 

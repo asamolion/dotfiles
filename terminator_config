@@ -1,20 +1,46 @@
 [global_config]
+  window_state = maximise
   enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   suppress_multiple_term_dialog = True
-  title_font = Fira Code weight=453 9
   title_use_system_font = False
-  window_state = maximise
+  title_font = Fira Code weight=453 9
 [keybindings]
-  copy = <Primary>c
+  go_up = <Primary>k
   go_down = <Primary>j
   go_left = <Primary>h
   go_right = <Primary>l
-  go_up = <Primary>k
+  copy = <Primary>c
+  paste = <Primary>v
+  next_tab = <Primary>Page_Down
+  prev_tab = <Primary>Page_Up
   group_all = None
   group_all_toggle = <Super>g
-  next_tab = <Primary>Page_Down
-  paste = <Primary>v
-  prev_tab = <Primary>Page_Up
+[profiles]
+  [[default]]
+    background_color = "#383838"
+    cursor_color = "#aaaaaa"
+    font = Monospace 15
+    foreground_color = "#ffffff"
+    scrollback_lines = 5000
+    scrollback_infinite = True
+    login_shell = True
+    use_system_font = False
+  [[Afterglow]]
+    background_color = "#212121"
+    cursor_color = "#d0d0d0"
+    font = Monospace 13
+    foreground_color = "#d0d0d0"
+    scrollback_lines = 5000
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+    use_system_font = False
+  [[One dark]]
+    background_color = "#1e2127"
+    cursor_color = "#676c76"
+    font = Monospace 13
+    foreground_color = "#5c6370"
+    scrollback_lines = 5000
+    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    use_system_font = False
 [layouts]
   [[default]]
     [[[child1]]]
@@ -27,28 +53,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    background_color = "#383838"
-    cursor_color = "#aaaaaa"
-    font = Monospace 15
-    foreground_color = "#ffffff"
-    scrollback_infinite = True
-    scrollback_lines = 5000
-    use_system_font = False
-  [[Afterglow]]
-    background_color = "#212121"
-    cursor_color = "#d0d0d0"
-    font = Monospace 13
-    foreground_color = "#d0d0d0"
-    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
-    scrollback_lines = 5000
-    use_system_font = False
-  [[One dark]]
-    background_color = "#1e2127"
-    cursor_color = "#676c76"
-    font = Monospace 13
-    foreground_color = "#5c6370"
-    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
-    scrollback_lines = 5000
-    use_system_font = False

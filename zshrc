@@ -115,6 +115,7 @@ eval $(thefuck --alias fix)
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export JAVA_HOME="/usr/java/jdk1.8.0_251"
+export DOTNET_CLI_TELEMETRY_OPTOUT=true
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH="$PATH:$ANDROID_HOME/build-tools/29.0.3"
 export PATH=$PATH:$ANDROID_HOME/platform-tools
@@ -124,5 +125,14 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/tools/android-studio/bin:$PATH"
 export PATH="$PATH:/usr/java/jdk1.8.0_251/bin"
 
+zstyle ':completion:*:ssh:*' hosts off
 
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/osama/ilminate/google-cloud-sdk/path.zsh.inc' ]; then . '/home/osama/ilminate/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/osama/ilminate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/osama/ilminate/google-cloud-sdk/completion.zsh.inc'; fi
+
+export OPENEDX_RELEASE=juniper.master
