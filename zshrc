@@ -57,6 +57,8 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -65,6 +67,7 @@ ZSH_THEME="robbyrussell"
 export WORKON_HOME=$HOME/.virtualenvs
 
 plugins=(
+  docker-compose
   extract
   git
   nvm
@@ -115,7 +118,7 @@ eval $(thefuck --alias fix)
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export JAVA_HOME="/usr/java/jdk1.8.0_251"
-export DOTNET_CLI_TELEMETRY_OPTOUT=true
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH="$PATH:$ANDROID_HOME/build-tools/29.0.3"
 export PATH=$PATH:$ANDROID_HOME/platform-tools
@@ -136,3 +139,9 @@ if [ -f '/home/osama/ilminate/google-cloud-sdk/path.zsh.inc' ]; then . '/home/os
 if [ -f '/home/osama/ilminate/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/osama/ilminate/google-cloud-sdk/completion.zsh.inc'; fi
 
 export OPENEDX_RELEASE=juniper.master
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+unsetopt share_history
+bindkey '^[[A' up-line-or-history
+bindkey '^[[B' down-line-or-history
