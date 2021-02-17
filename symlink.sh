@@ -14,6 +14,7 @@ sudo ln -sf $dotfiles_dir/bash_aliases ~/.bash_aliases
 sudo ln -sf $dotfiles_dir/zsh_aliases ~/.zsh_aliases
 sudo ln -sf $dotfiles_dir/terminator_config ~/.config/terminator/config
 sudo ln -sf $dotfiles_dir/neovintageousrc ~/.config/sublime-text-3/Packages/User/.neovintageousrc
+sudo ln -sf $dotfiles_dir/init.vim ~/.config/init.vim
 
 
 git config --global core.editor "vim"
