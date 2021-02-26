@@ -145,3 +145,5 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 unsetopt share_history
 bindkey '^[[A' up-line-or-history
 bindkey '^[[B' down-line-or-history
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
