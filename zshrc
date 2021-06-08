@@ -146,4 +146,7 @@ unsetopt share_history
 bindkey '^[[A' up-line-or-history
 bindkey '^[[B' down-line-or-history
 
+export DENO_INSTALL="/home/osama/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
