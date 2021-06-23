@@ -44,9 +44,9 @@ alias statpostgres="sudo systemctl status postgresql.service"
 alias startpostgres="sudo systemctl start postgresql.service"
 alias stoppostgres="sudo systemctl stop postgresql.service"
 
-alias amend="git add . && git commit --amend -m 'wip' && gp -f"
+alias amend="git add . && git commit --amend --no-edit && gp -f"
 
-alias slhub="subl $HOME/lhuploader.sublime-project"
+alias slhub="subl $HOME/lhub.sublime-project"
 
 alias tailnginxerror="sudo tail -f /var/log/nginx/error.log"
 alias dmx="deemix -b flac"
