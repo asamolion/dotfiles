@@ -49,9 +49,9 @@ alias amend="git add . && git commit --amend --no-edit && gp -f"
 alias slhub="subl $HOME/lhub.sublime-project"
 
 alias tailnginxerror="sudo tail -f /var/log/nginx/error.log"
-alias dmx="deemix -b flac"
+alias dmx="deemix -b flac -p ~/Music"
 
-alias vim="nvim"
-alias v.="nvim-qt ."
-alias vimrc="vim ~/.config/nvim/init.vim"
+#alias vim="nvim"
+#alias v.="nvim-qt ."
+#alias vimrc="vim ~/.config/nvim/init.vim"
 
