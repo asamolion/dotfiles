@@ -73,7 +73,11 @@ plugins=(
   git
   nvm
   wd
-  history-search-multi-word
+  #history-search-multi-word
+  zsh-autosuggestions
+  copyfile
+  copybuffer
+  dirhistory
 )
 
 source $ZSH/oh-my-zsh.sh

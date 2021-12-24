@@ -50,7 +50,6 @@ alias slhub="subl $HOME/lhub.sublime-project"
 
 alias tailnginxerror="sudo tail -f /var/log/nginx/error.log"
 alias dmx="deemix -b flac -p ~/Music"
-
 #alias vim="nvim"
 #alias v.="nvim-qt ."
 #alias vimrc="vim ~/.config/nvim/init.vim"
