@@ -188,3 +188,10 @@ if [ -f '/home/osama/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/
 
 # golang path
 export PATH=$PATH:/usr/local/go/bin
+
+export JAVA_HOME=/usr/lib/jvm/java-18-openjdk-amd64
+export PATH=$PATH:/home/osama/tools/android-studio/bin
+#export PATH=$PATH:/home/osama/tools/platform-tools
+
+
+
