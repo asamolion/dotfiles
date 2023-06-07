@@ -188,3 +188,9 @@ if [ -f '/home/osama/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/
 
 # golang path
 export PATH=$PATH:/usr/local/go/bin
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+# Load Angular CLI autocompletion.
+#source <(ng completion script)
