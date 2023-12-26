@@ -192,5 +192,10 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 
-# Load Angular CLI autocompletion.
-#source <(ng completion script)
+
+# bun completions
+[ -s "/home/osama/.bun/_bun" ] && source "/home/osama/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
