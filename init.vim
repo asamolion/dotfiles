@@ -16,15 +16,19 @@ call plug#begin("~/.vim/plugged")
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'machakann/vim-sandwich'
   Plug 'ap/vim-buftabline'
+  Plug 'wuelnerdotexe/vim-astro'
+
 
 call plug#end()
 " Config Section
 
+let g:astro_typescript = 'enable'
 
 
 if (has("termguicolors"))
  set termguicolors
 endif
+
 syntax enable
 colorscheme onedark
 
@@ -46,7 +50,8 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+"let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+let $FZF_DEFAULT_COMMAND=""
 
 "set guifont=Fira\ Code\ 20
 set hidden

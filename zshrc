@@ -201,3 +201,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
+if [ -e /home/osama/.nix-profile/etc/profile.d/nix.sh ]; then . /home/osama/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
