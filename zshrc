@@ -3,7 +3,7 @@
 #export PATH=/home/osama/.local/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-#export ZSH="~/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -197,4 +197,3 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 if [ -e /home/osama/.nix-profile/etc/profile.d/nix.sh ]; then . /home/osama/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-#export PATH=$PATH:/usr/local/go/bin
