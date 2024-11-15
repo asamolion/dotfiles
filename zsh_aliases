@@ -1,7 +1,7 @@
 alias ..="cd .."
 alias -- -="cd -"
 alias s.="subl ."
-alias s.="zed ."
+alias z.="zed ."
 alias c.="codium ."
 alias open="xdg-open"
 alias ssho="ssh -o IdentitiesOnly=yes"
